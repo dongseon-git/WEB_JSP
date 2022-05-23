@@ -1,0 +1,45 @@
+<%@page import="java.io.IOException"%>
+<%@page import="java.io.FileReader"%>
+<%@page import="org.apache.log4j.Logger"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL:out</title>
+</head>
+<body>
+<h2>JSTL:out</h2>
+<hr/>
+<%
+///studyhtml5/jsp/j06/j02_choose.jsp
+Logger LOG = Logger.getLogger(this.getClass());
+LOG.debug("JSTL:out");
+FileReader reader = null;
+try{
+	//http://localhost:8081/studyhtml5/jsp/j06/j10_out.jsp?path=/studyhtml5/jsp/j06/j02_choose.jsp
+	//path를 파람으로 전달(get)
+	//path에 절대경로
+	String path = request.getParameter("path");
+	LOG.debug("path: path");
+	%>	
+	<%
+}catch(IOException e){
+	LOG.debug("---------");
+	LOG.debug("IOException e:"+e.getMessage());
+	LOG.debug("------------");
+	
+}finally{
+	if(null != reader){
+	try{
+		reader.close();
+	}catch(IOException e){
+		
+	}
+}
+}
+%>
+</body>
+</html>

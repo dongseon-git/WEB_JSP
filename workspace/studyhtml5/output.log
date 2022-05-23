@@ -1,0 +1,3 @@
+2022-05-20 09:47:48,431 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - -NamingException-Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2022-05-20 09:47:48,436 DEBUG [main] cmn.PConnection   (PConnection.java:30)     - ------------
+2022-05-20 09:47:48,437 DEBUG [main] cmn.PConnection   (PConnection.java:32)     - ------------

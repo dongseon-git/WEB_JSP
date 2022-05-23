@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel = "short icon" type="image/x-icon" href="/studyhtml5/favicon.ico">
+<!--스타일 시트 -->
+<style type="text/css">
+ from,div,input {
+ margin: 12px;
+ border: 1px solid red;
+ }
+</style>
+<title>Insert title here</title>
+<!--자바스크립트 코드 -->
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+   <h2>버블링</h2>
+   <hr/>
+   <form action = "#" onclick = "alert('form');">
+   <div onclick = "event.stopPropagation();">
+   <input type = "submit" onclick="alert('submit')" value= '클릭'>
+   </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel = "short icon" type="image/x-icon" href="/studyhtml5/favicon.ico">
+<!--스타일 시트 -->
+<style type="text/css">
+
+</style>
+<title>Insert title here</title>
+<!--자바스크립트 코드 -->
+<script type="text/javascript">
+let brower = window.navigator.userAgent;
+
+//브라우저 정보 추출
+function getBrowerInfo(){
+	let agent = window.navigator.userAgent.toUpperCase();
+	console.log('agent:' + agent);
+	
+	if (agent.lastindexOf('EDG') >=0){
+		return 'EDG';
+	}else if(agent.Indexof('TRIDENT')>=0){
+        return 'IE';
+	}else if(agent.Indexof('CHROME')>=0){
+		return 'CHROME';
+	}else{
+		return '';
+	}
+}
+window.onload = function(){
+	let btn = document.getElementById('btn');
+	btn.onclick = function(){
+	alert(getBrowerInfo());	
+	};
+};
+</script>
+</head>
+<body>
+   <h2>navigator</h2>
+   <hr/>
+   <button id ="btn">브라우저</button>
+</body>
+</html>

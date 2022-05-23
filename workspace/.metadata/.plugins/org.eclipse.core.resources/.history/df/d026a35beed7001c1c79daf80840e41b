@@ -1,0 +1,38 @@
+package studyhtml5;
+
+public class UserVO {
+private String userId;//사용자 id
+private String passWd;//비밀번호
+private String name;//이름
+
+public UserVO() {}
+
+public String getUserId() {
+	return userId;
+}
+
+public void setUserId(String userId) {
+	this.userId = userId;
+}
+
+public String getPassWd() {
+	return passWd;
+}
+
+public void setPassWd(String passWd) {
+	this.passWd = passWd;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+@Override
+public String toString() {
+	return "UserVO [userId=" + userId + ", passWd=" + passWd + ", name=" + name + "]";
+}
+}

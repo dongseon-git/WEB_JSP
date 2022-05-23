@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel = "short icon" type="image/x-icon" href="/studyhtml5/favicon.ico">
+<!--스타일 시트 -->
+<style type="text/css">
+ from,div,input {
+ margin: 12px;
+ border: 1px solid red;
+ }
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+   <form action="#">
+   <div>
+   <input type = "submit" value = '클릭'>
+   </div>
+   
+   </form>
+   <script type="text/javascript">
+    for(let elem of document.querySelectorAll('*')){
+    	//capture option
+    	//flase: 버블링 단계에서 동작
+    	//ture: 처링 단계에서 동작
+    	//캡처링 단계
+    	elem.addEventListener('click',e=>alert(`캡처링:${elem.tagName}`),true);
+    	//버블링 단계
+        elem.addEventListener('click',e=>alert(`버블링:${elem.tagName}`));
+
+    }
+</script>
+</body>
+</html>

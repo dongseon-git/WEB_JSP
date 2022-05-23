@@ -1,0 +1,50 @@
+<%@page import="com.pcwk.board.BoardVO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%
+    BoardVO vo = (BoardVO)request.getAttribute("vo");
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>게시상세</h2>
+<hr/>
+<table width="600">
+<tr>
+<td width="100">제목</td>
+<td width="500"><input type="text" name="title" id="title" maxlength="200" size="50"></td>
+</tr>
+<tr>
+<td width="100">등록자</td>
+<td width="500"><input type="text" name="reg_id" id="reg_id" maxlength="50" size="50" readonly></td>
+</tr>
+<tr>
+<td width="100">등록일</td>
+<td width="500"><input type="text" name="regDt" id="regDt" maxlength="50" size="50" readonly></td>
+</tr>
+<tr>
+<td width="100">수정자</td>
+<td width="500"><input type="text" name="mod_id" id="mod_id" maxlength="50" size="50" readonly></td>
+</tr>
+<tr>
+<td width="100">수정일</td>
+<td width="500"><input type="text" name="modDt" id="modDt" maxlength="50" size="50" readonly></td>
+</tr>
+<tr>
+<td width="100">조회수</td>
+<td width="500"><input type="text" name="readCnt" id="readCnt" maxlength="50" size="50" readonly></td>
+</tr>
+<tr>
+<td colspan="2">내용</td>
+</tr>
+<tr>
+<td colspan="2"><textarea rows="5" cols="20" name="contents" id="contents"></textarea></td>
+</tr>
+</table>
+
+</body>
+</html>

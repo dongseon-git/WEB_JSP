@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel = "short icon" type="image/x-icon" href="/studyhtml5/favicon.ico">
+<!--스타일 시트 -->
+<style type="text/css">
+
+</style>
+<title>Insert title here</title>
+<!--자바스크립트 코드 -->
+<script type="text/javascript">
+window.onload = function(){
+	// a 객체
+   let pcwk = document.getElementById('pcwk');	
+	pcwk.onclick = function(event){
+	alert('PCWK');	
+	event.preventDefault();
+  return false;
+	};
+};
+</script>
+</head>
+<body>
+   <h2>preventDefault()</h2>
+   <hr/>
+   <div>
+   <a href ="https://cafe.daum.net/pcwk" id ="pcwk">PCWK</a>
+   </div>
+</body>
+</html>

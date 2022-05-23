@@ -1,0 +1,6 @@
+127.0.0.1 - - [07/May/2022:15:53:19 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [07/May/2022:15:53:20 +0900] "GET /studyhtml5/js/j08/h11.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2022:15:53:49 +0900] "GET /studyhtml5/template/board_list.html HTTP/1.1" 200 3184
+0:0:0:0:0:0:0:1 - - [07/May/2022:15:53:49 +0900] "GET /studyhtml5/asset/css/board_20220422.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2022:15:53:49 +0900] "GET /studyhtml5/font/NanumGothic.woff HTTP/1.1" 200 2381520
+0:0:0:0:0:0:0:1 - - [07/May/2022:15:53:49 +0900] "GET /favicon.ico HTTP/1.1" 404 818

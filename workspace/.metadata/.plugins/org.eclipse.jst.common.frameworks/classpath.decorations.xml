@@ -1,0 +1,7 @@
+<classpath>
+  <container id="studyhtml5!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/Users/gimdongseon/Documents/DCOM_20220127/03_WEB/workspace/studyhtml5/WebContent/WEB-INF/lib/cos-05Nov2002.jar">
+      <source-attachment-path>/studyhtml5/WebContent/WEB-INF/source/cos-05nov2002-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

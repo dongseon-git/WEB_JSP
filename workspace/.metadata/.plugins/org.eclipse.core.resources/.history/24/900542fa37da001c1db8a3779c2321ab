@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>forEach:구구단 4단 출력</h2>
+<hr/>
+<ul>
+<c:forEach var="i" begin="4" end="36" step="9">
+<c:set var="sum" value="${sum + i}"/>
+<li> 4*1 = ${sum}</li>
+</c:forEach>
+
+
+</ul>
+</body>
+</html>
