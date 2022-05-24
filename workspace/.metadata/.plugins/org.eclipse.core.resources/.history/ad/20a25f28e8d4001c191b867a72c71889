@@ -1,5 +1,0 @@
-package com.pcwk.cmn;
-
-public class MessageVO extends DTO {
-
-}
