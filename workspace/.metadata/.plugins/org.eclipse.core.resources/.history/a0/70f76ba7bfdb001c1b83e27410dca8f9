@@ -58,9 +58,6 @@
 <!--스타일 시트 -->
 <style type="text/css">
 </style>
-
-
-
 <title>게시목록</title>
 <!-- jquery -->
 <script type="text/javascript" src="<%=contPath %>/asset/js/jquery-1.12.4.js"></script>
@@ -69,7 +66,6 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=contPath %>/asset/js/common.js"></script>
-
 <style type="text/css">
   *{
     margin: 0px;
@@ -100,14 +96,8 @@
 <title>게시 목록</title>
 </head>
 <body>
-    <!-- div container -->
-  <div class="container">
-  
-   <div class="page-header">
-      <h2>게시 목록</h2>
-    </div>
-  
-  
+  <h2>게시 목록</h2>
+  <hr/>
 <%--   searchVO : ${searchVO}<br> --%>
 <%--   list.size : ${list.size()} --%>
   <div>
